@@ -1,0 +1,31 @@
+@import './variables.scss';
+
+.contacts {
+  position: absolute;
+  top: calc(50% - 100px);
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  justify-content: space-between;
+  left: calc(100% - 3em);
+}
+
+.contacts a {
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  min-width: 100px;
+  max-width: 150px;
+  transition: 0.3s;
+  color: #000;
+  font-size: 16px;
+  font-family: $mainFont;
+}
+
+.contacts a:hover {
+  transform: translateX(-5em);
+}
+
+img {
+  max-height: 25px;
+}
