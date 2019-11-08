@@ -1,3 +1,8 @@
+import githubLogo from './assets/github.svg';
+import emailLogo from './assets/email.svg';
+import phoneLogo from './assets/smartphone.svg';
+import cvLogo from './assets/cv.svg';
+
 export const Projects = [
   {
     id: 1,
@@ -9,7 +14,7 @@ export const Projects = [
       'React'
     ],
     description: 'Lorem',
-    image: '/assets/cv.svg'
+    image: '/assets/img.jpg'
   },
   {
     id: 1,
@@ -21,7 +26,7 @@ export const Projects = [
       'React'
     ],
     description: 'Lorem',
-    image: '/assets/email.svg'
+    image: {cvLogo}
   },
   {
     id: 1,
@@ -33,7 +38,8 @@ export const Projects = [
       'React'
     ],
     description: 'Lorem',
-    image: '/assets/cv.svg'
+    image: '../assets/cv.svg'
+
   }
 ];
 
