@@ -1,6 +1,4 @@
 import React from "react"
-import Portfolio from './Portfolio';
-import About from './About';
 import './Main.scss';
 import { Link } from 'react-router-dom';
 

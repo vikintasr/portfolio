@@ -2,20 +2,31 @@ import React from "react"
 import './Main.scss';
 import Projects from '../Projects';
 import Item from './Item';
+import PortfIntro from './PortfIntro';
 
- const Portfolio = () => {
-   const portfolioItem = Projects.map((project, i) => {
-     return <Item
-     key={i}
-     name={Projects[i].name}
-     image={Projects[i].image}/>
-   })
+
+const Portfolio = () => {
+  const portfolioItem = Projects.map(( i) => {
+    return <Item
+    key={i}
+    image={i.image}
+    description={i.description}
+    name={i.name}
+    tech={i.tech.map((t) =>
+    <span> {t} </span>
+    )}
+    />
+  })
    return (
-     <div  className='intro'>
-     {portfolioItem}
+     <div className='container'>
+      <PortfIntro />
+      <div className='portfGrid'>
+      {portfolioItem}
+      </div>
      </div>
    )
  }
 
  
 export default Portfolio;
+

@@ -14,8 +14,8 @@
 
 .heading {
   font-family: 'Overpass', sans-serif;
-  font-weight: 800;
-  font-size: 62px;
+  font-weight: 400;
+  font-size: 52px;
 }
 
 .text {
@@ -24,11 +24,8 @@
 }
 
 .container {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  width: 70%;
-  transform: translate(-50%);
+  margin: 5em auto;
+  width: 80%;
 }
 
 .intro {
@@ -40,6 +37,14 @@
   transform: translate(-50%,-50%);
 }
 
+.portfGrid {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+}
+
+
 .buttons {
   display: flex;
   width: 50%;
@@ -47,6 +52,8 @@
   margin: 35px auto;
  
 }
+
+
 
 .buttonIntro {
   cursor: pointer;
@@ -67,7 +74,36 @@
   color: #fff;
 }
 
+.portfolioItem {
+  margin: 15px;
+  max-width: 600px;
+  height: auto;
+  box-shadow: 1px 4px 39px -12px rgba(0,0,0,0.75);
+}
+
+.portfolioItem:hover {
+  cursor: pointer;
+  background: rgba(0,0,0, .3);
+}
+
+.modalItem {
+  background: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  transform: translate(-50%,-50%);
+}
+
+.techItem {
+  padding: 5px;
+}
+
 @media (max-width: 768px) {
+
+  .portfolioItem {
+    max-width: 370px;
+  }
 
   .intro {
     width: 70%;
@@ -84,5 +120,7 @@
   .buttons {
     width: 100%;
   }
+
+
 
 }

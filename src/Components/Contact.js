@@ -10,16 +10,16 @@ const About = () => {
   return (
     <div className='contacts'>
     <div>
-      <a className='space-between' href=''><img src={githubLogo} />Github</a>
+      <a className='space-between' href=''><img className='cntcIcon' src={githubLogo} />Github</a>
     </div>
     <div>
-      <a className='space-between' href=''><img src={cvLogo} /><p>Resume</p></a>
+      <a className='space-between' href=''><img className='cntcIcon' src={cvLogo} /><p>Resume</p></a>
     </div>
     <div>
-      <a className='space-between' href=''><img src={emailLogo} />Email</a>
+      <a className='space-between' href=''><img className='cntcIcon' src={emailLogo} />Email</a>
     </div>
     <div>
-      <a className='space-between' href=''><img src={phoneLogo} />Phone</a>
+      <a className='space-between' href=''><img className='cntcIcon' src={phoneLogo} />Phone</a>
     </div>
     </div>
   )

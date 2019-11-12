@@ -1,44 +1,77 @@
-import githubLogo from './assets/github.svg';
-import emailLogo from './assets/email.svg';
-import phoneLogo from './assets/smartphone.svg';
-import cvLogo from './assets/cv.svg';
 
 export const Projects = [
   {
     id: 1,
-    name: 'Site 1',
+    name: 'Portfolio Site',
     tech: [
       'HTML',
       'CSS',
       'SASS',
-      'React'
+      'React',
+      'Material UI',
+      'Responsive'
     ],
-    description: 'Lorem',
-    image: '/assets/img.jpg'
+    description: 'Demva',
+    image: '/Image4.jpg'
   },
   {
-    id: 1,
-    name: 'Site 2',
+    id: 2,
+    name: 'Demva',
     tech: [
       'HTML',
       'CSS',
-      'SASS',
-      'React'
+      'WordPress',
+      'Content Writing'
     ],
-    description: 'Lorem',
-    image: {cvLogo}
+    description: 'Lorem2',
+    image: '/Image4.jpg'
   },
   {
-    id: 1,
-    name: 'Site 3',
+    id: 3,
+    name: 'Construction Website',
     tech: [
       'HTML',
       'CSS',
-      'SASS',
-      'React'
+      'Bootstrap',
     ],
-    description: 'Lorem',
-    image: '../assets/cv.svg'
+    description: 'Lorem3',
+    image: '/Image4.jpg'
+
+  },
+  {
+    id: 4,
+    name: 'Basic List',
+    tech: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+    ],
+    description: 'Lorem3',
+    image: '/Image4.jpg'
+
+  },
+  {
+    id: 4,
+    name: 'Basic List',
+    tech: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+    ],
+    description: 'Lorem3',
+    image: '/Image4.jpg'
+
+  },
+  {
+    id: 4,
+    name: 'Basic List',
+    tech: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+    ],
+    description: 'Lorem3',
+    image: '/Image4.jpg'
 
   }
 ];
