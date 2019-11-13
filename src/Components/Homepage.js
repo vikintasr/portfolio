@@ -10,7 +10,6 @@ const Homepage = () => {
       <p className='subHeading'>Front-End Developer you need</p>
       <div className='buttons'>
         <Link className='buttonIntro' to='/Portfolio'>Portfolio</Link>
-        <Link className='buttonIntro' to='/About'>About</Link>
       </div>
     </div>
   )

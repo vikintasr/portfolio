@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Main.scss';
-import Projects from '../Projects';
 import Modal from '@material-ui/core/Modal';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -8,19 +7,18 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
+import Fade from '@material-ui/core/Fade';
+import Backdrop from '@material-ui/core/Backdrop';
+import Projects from '../Projects';
+
+// const live = Projects.map(( i) => {
+//   return (
+//     i.live
+//   )
+//   });
 
 
-const useStyles = makeStyles({
-  card: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 140,
-  },
-});
-
-  
-  const Item = ({ image, description, name, tech }) => {
+  const Item = ({ image, description, name, tech, code, live }) => {
     const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => {
@@ -38,8 +36,14 @@ const useStyles = makeStyles({
         aria-describedby="simple-modal-description"
         open={open}
         onClose={handleClose}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
       >
         <div class='modalItem'>
+        <Fade in={open}>
         <Card>
         <CardMedia
           component="img"
@@ -47,19 +51,27 @@ const useStyles = makeStyles({
           image={image}
         />
         <CardContent>
-          <h1>{name}</h1>
-          <div>{tech}</div>
-          <p>{description}</p>
+          <h1 style={{paddingLeft: ".5em"}}>{name}</h1>
+          <div className='techItems'>{tech}</div>
+          <p className='description'>{description}</p>
         </CardContent>
       <CardActions>
+      <div style={{paddingLeft: ".5em"}}>
+      <a href={live}>
         <Button size="small" color="primary">
           Live
         </Button>
+        </a>
+        <a href={code}>
         <Button size="small" color="primary">
           Code
         </Button>
+        </a>
+        </div>
       </CardActions>
+      
     </Card>
+    </Fade>
         </div>
       </Modal>
     </div>

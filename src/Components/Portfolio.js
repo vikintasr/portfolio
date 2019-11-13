@@ -10,10 +10,12 @@ const Portfolio = () => {
     return <Item
     key={i}
     image={i.image}
+    live={i.live}
+    code={i.code}
     description={i.description}
     name={i.name}
     tech={i.tech.map((t) =>
-    <span> {t} </span>
+    <span className='techItem'> {t} </span>
     )}
     />
   })
